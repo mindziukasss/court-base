@@ -1,3 +1,1 @@
-<?php
-
-echo '<hr />All rights reserved.</body></html>';
+<hr /><?=$footer_text;?></body></html>

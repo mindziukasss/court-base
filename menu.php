@@ -1,2 +1,2 @@
-<?php
-echo '<a href="/">Main</a> | <a href="about.php">About</a><br /><br />';
+<a href="/"><?=$menu_main;?></a> |
+<a href="about.php"><?=$manu_about;?></a><br /><br />
