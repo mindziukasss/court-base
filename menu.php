@@ -1,2 +1,8 @@
-<a href="/"><?=$menu_main;?></a> |
-<a href="about.php"><?=$manu_about;?></a><br /><br />
+
+<a href="index.php"><?=$meniu_main;?></a> |
+<a href="about.php"><?=$meniu_about;?></a>
+    </div>
+  </div>
+ </div>
+</div>
+</nav>
