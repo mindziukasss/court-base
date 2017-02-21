@@ -1,16 +1,21 @@
 <?php
-$title = 'Lessons PHP';
-$meniu_main = 'Basic';
-$meniu_about = 'About';
-$main_text = 'This is my amazing courts';
-$footer_text = 'All rights reserved.';
-// $about = $_GET['about'];
-// default $about . 'about.php';
+session_start();
+$db = new PDO('mysql:host=localhost;dbname=court;charset=utf8', 'root' , '');
 
-
+include ('classes/cities.php');
+include ('classes/courts.php');
 include('header.php');
 include('menu.php');
-include('content.php');
+include('views/search/search_form.php');
+
+$action = (isset($_GET['action'])) ? $_GET['action'] : '';
+switch ($action) {
+  case 'about': include('views/about.php'); break;
+  case 'court': include('views/courts/courts.php'); break;
+  case 'search': include('views/search/search.php'); break;
+  case 'contact': include('views/contact.php'); break;
+  case 'admin': include('admin.php'); break;
+  default: include('views/home.php'); break;
+}
+
 include('footer.php');
-
-

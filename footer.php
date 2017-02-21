@@ -1,3 +1,7 @@
-<hr /><?=$footer_text;?></div></body></html>
-
+</div>
+<div>
+<p>Footer</p>
+</div>
+</body>
+</html>
 
