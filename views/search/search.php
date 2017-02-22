@@ -1,6 +1,6 @@
 <?php
 
-$courts = $class_courts->searchCourts($_GET['city_id'], $_GET['address']);
+$courts = $class_courts->searchCourts($_GET['city_id'], $_GET['addres']);
 ?>
 
 <h2>Courts rezult</h2>

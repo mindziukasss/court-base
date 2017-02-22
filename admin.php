@@ -1,3 +1,8 @@
+  <div>
+    <a href="index.php?action=admin&function=courts">Courts</a> | 
+    <a href="index.php?action=admin&function=cities">Cities</a> | 
+    <a href="logout.php">Logout</a> 
+  </div>  
 <?php
 
 if (isset($_POST['login'])) {
@@ -13,11 +18,6 @@ if (isset($_SESSION['username'])) {
   if ($function == 'courts') include('views/courts/courts.php');
 
 ?>
-  <div>
-    <a href="index.php?action=admin&function=courts">Courts</a> | 
-    <a href="index.php?action=admin&function=cities">Cities</a> | 
-    <a href="logout.php">Logout</a> 
-  </div>  
   <?php
 } else {
   ?>
