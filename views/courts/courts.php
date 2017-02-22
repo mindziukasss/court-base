@@ -13,28 +13,25 @@
 <h2>Courts</h2>
 <table border="1" cellpadding="2" cellspacing="0">
   <tr>
-    <!-- <th>City</th> -->
+    <th>City</th>
     <th>Addres</th>
     <th>Descriptio</th>
     <th>Create time</th>
-
   </tr>
-  
     <tr>
-     
-   
-        <?php foreach ($courts as $court): ?>
-          <td><?php echo $court['addres'];?></td>
-          <td><?php echo $court['description'];?></td>
-          <td><?php echo $court['create_time'];?></td>
-          <td><a href="index.php?action=admin&function=cities&edit=<?=$city['id'];?>">Edit</a></td>
-          <td><a href="index.php?action=admin&function=cities&delete=<?=$city['id'];?>"
-          onclick="return confirm('Are you sure?')">Delete</a></td>
-      </td>
+    <?php foreach ($cities as $city): ?>
+      <?php foreach ($courts as $court): ?>
+        <td><?php echo $city['title'];?></td>
+        <td><?php echo $court['addres'];?></td>
+        <td><?php echo $court['description'];?></td>
+        <td><?php echo $court['create_time'];?></td>
+        <td><a href="index.php?action=admin&function=cities&edit=<?=$city['id'];?>">Edit</a></td>
+        <td><a href="index.php?action=admin&function=cities&delete=<?=$city['id'];?>"
+        onclick="return confirm('Are you sure?')">Delete</a></td>
     </tr>
       <?php endforeach; ?>
-  
-
+    <?php endforeach; ?>
+  </table>
 <hr />
 <form action="" method="post">
   New cities:

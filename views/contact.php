@@ -1,2 +1,1 @@
-<?php 
-echo 'This is contact';
+<h1>Contact</h1>

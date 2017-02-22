@@ -1,5 +1,5 @@
 <?php
-
+  
   $courts = $class_courts->getNewestCourts();
 
 ?>
@@ -12,3 +12,9 @@
 </li>
 <? endforeach; ?>
 </ul>
+
+<!-- <a href="views/courts/courts.php">All courts</a> -->
+
+
+
+<?php  include('views/courts/courts.php'); ?>
